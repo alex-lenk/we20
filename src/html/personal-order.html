@@ -1,0 +1,141 @@
+@@include("blocks/header.html", {
+"style": ""
+})
+
+<nav class="breadcrumb-wrap container" aria-label="breadcrumb">
+    <ol class="breadcrumb" itemprop="http://schema.org/breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="/" class="breadcrumb-link" itemscope="" itemtype="http://schema.org/Thing" itemprop="item name">Главная</a>
+            <meta itemprop="position" content="1">
+        </li>
+        <li class="breadcrumb-item breadcrumb-item__active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" aria-current="page">
+            <span itemprop="name">Мой кабинет</span>
+            <meta itemprop="position" content="2">
+        </li>
+    </ol>
+</nav>
+
+<div class="page-head">
+    <div class="container">
+        <h1 class="page-title">Профиль пользователя</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <aside class="personal-aside col-lg-3">
+            <h3 class="personal-aside__title">Мой кабинет</h3>
+
+            <ul class="personal-menu list-unstyled">
+                <li class="personal-menu__item"><a href="#" class="personal-menu__link link-decor">Заказы</a></li>
+                <li class="personal-menu__item"><a href="#" class="personal-menu__link link-decor">Личные данные</a></li>
+                <li class="personal-menu__item"><a href="#" class="personal-menu__link link-decor">Контакты</a></li>
+            </ul>
+
+            <form onsubmit="return (ValidMail())" class="personal-subscription" method="POST" name="subscribtion_form"
+                  action="https://cp.unisender.com/ru/subscribe?hash=6uxoohz8ct9f35h8a8ifgus6g5c41h17fiumw1dszsaumqjss43zy">
+                <h2 class="personal-subscription__title">Вступай в закрытый винный клуб!</h2>
+
+                <div class="personal-subscription__input">
+                    <svg class="personal-subscription__icon">
+                        <use xlink:href="/local/templates/wineexpress/img/icons.svg#email"></use>
+                    </svg>
+                    <input type="text" name="email" id="footer-subscription__field" placeholder="e-mail" class="personal-subscription__field form-control hide-placeholder">
+                </div>
+
+                <button class="btn-primary btn personal-subscription__btn" type="submit">Вступить в клуб</button>
+
+                <input type="hidden" name="charset" value="UTF-8">
+                <input type="hidden" name="default_list_id" value="19300713">
+                <input type="hidden" name="overwrite" value="2">
+                <input type="hidden" name="is_v5" value="1">
+
+                <div class="personal-subscription__small">
+                    Нажимая на кнопку, вы принимаете <a href="/privacy/" target="_blank">правила</a> сайта и соглашаетесь на получение рассылки.
+                </div>
+            </form>
+        </aside>
+
+        <div class="col-lg-9">
+            <div class="personal-profile">
+                <div class="personal-order__head row">
+                    <div class="col-md-3">Номер заказа</div>
+                    <div class="col-md-3">Дата</div>
+                    <div class="col-md-3">Статус заказа</div>
+                    <div class="col-md-3 text-right">Сумма</div>
+                </div>
+
+                <div class="personal-order__list">
+                    <a href="#" class="personal-order__item row">
+                        <div class="personal-order__item__number col-md-3">
+                            Заказ № 1291
+                        </div>
+                        <div class="col-md-3">28.02.20</div>
+                        <div class="col-md-3" style="color: green">Выполнен</div>
+                        <div class="col-md-3">628</div>
+                    </a>
+                    <a href="#" class="personal-order__item row">
+                        <div class="personal-order__item__number col-md-3">
+                            Заказ № 1236
+                        </div>
+                        <div class="col-md-3">16.02.20</div>
+                        <div class="col-md-3" style="color: green">Выполнен</div>
+                        <div class="col-md-3">3564</div>
+                    </a>
+                    <a href="#" class="personal-order__item row">
+                        <div class="personal-order__item__number col-md-3">
+                            Заказ № 1230
+                        </div>
+                        <div class="col-md-3">14.02.20</div>
+                        <div class="col-md-3" style="color: green">Выполнен</div>
+                        <div class="col-md-3">858</div>
+                    </a>
+                    <a href="#" class="personal-order__item row">
+                        <div class="personal-order__item__number col-md-3">
+                            Заказ № 1211
+                        </div>
+                        <div class="col-md-3">07.02.20</div>
+                        <div class="col-md-3" style="color: green">Выполнен</div>
+                        <div class="col-md-3">738</div>
+                    </a>
+                    <a href="#" class="personal-order__item row">
+                        <div class="personal-order__item__number col-md-3">
+                            Заказ № 1192
+                        </div>
+                        <div class="col-md-3">22.01.20</div>
+                        <div class="col-md-3" style="color: black">Выполняется</div>
+                        <div class="col-md-3">612</div>
+                    </a>
+                    <a href="#" class="personal-order__item row">
+                        <div class="personal-order__item__number col-md-3">
+                            Заказ № 1186
+                        </div>
+                        <div class="col-md-3">17.01.20</div>
+                        <div class="col-md-3" style="color: black">Выполняется</div>
+                        <div class="col-md-3">642</div>
+                    </a>
+                    <a href="#" class="personal-order__item row">
+                        <div class="personal-order__item__number col-md-3">
+                            Заказ № 1072
+                        </div>
+                        <div class="col-md-3">25.12.19</div>
+                        <div class="col-md-3" style="color: black">Выполняется</div>
+                        <div class="col-md-3">630</div>
+                    </a>
+                    <a href="#" class="personal-order__item row">
+                        <div class="personal-order__item__number col-md-3">
+                            Заказ № 1013
+                        </div>
+                        <div class="col-md-3">12.12.19</div>
+                        <div class="col-md-3" style="color: black">В обработке</div>
+                        <div class="col-md-3">7850</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include("blocks/footer.html", {
+"js": ""
+})

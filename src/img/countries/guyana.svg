@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+    <defs>
+        <style>.cls-1{fill:#009e49;}.cls-2{fill:#fff;}.cls-3{fill:#fcd116;}.cls-4{fill:#ce1126;}</style>
+    </defs>
+    <title>guyana</title>
+    <path class="cls-1" d="M0,0H1000V600H0Z"/>
+    <path class="cls-2" d="M0,0,1000,300,0,600Z"/>
+    <path class="cls-3" d="M0,26.1,912,300,0,573.9Z"/>
+    <path d="M0,0,500,300,0,600Z"/>
+    <path class="cls-4" d="M0,35,441.7,300,0,565Z"/>
+</svg>

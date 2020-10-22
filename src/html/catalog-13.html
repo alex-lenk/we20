@@ -1,0 +1,52 @@
+@@include("blocks/header.html", {
+"style": "<link rel='stylesheet' href='/local/templates/wineexpress/styles/catalog.min.css'>"
+})
+
+
+<nav aria-label="breadcrumb" class="container">
+    <ol class="breadcrumb" itemprop="http://schema.org/breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="/" class="breadcrumb-link" itemscope="" itemtype="http://schema.org/Thing" itemprop="item name">Главная</a>
+            <meta itemprop="position" content="1">
+        </li>
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="/catalog.html" class="breadcrumb-link" itemscope="" itemtype="http://schema.org/Thing" itemprop="item name">Каталог</a>
+            <meta itemprop="position" content="1">
+        </li>
+        <li class="breadcrumb-item breadcrumb-item__active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" aria-current="page">
+            <span itemprop="name">Вина с крепостью 13º</span>
+            <meta itemprop="position" content="2">
+        </li>
+    </ol>
+</nav>
+
+
+<div class="page-head">
+    <div class="container">
+        <h1 class="page-title">Вина с крепостью 13º</h1>
+    </div>
+</div>
+
+
+<div class="catalog-info container">
+    <div class="row">
+        <div class="col-12">
+            Максимальные значения для крепленого вина достигают 20 градусов, но выпускаются напитки, крепость которых не превышает 5 градусов. Золотая середина — классические сухие вина, крепость которых варьируется от 10 до 15%. Между тем к слабоалкогольным напиткам относятся только те вина, которые содержат менее 8% этанола. Так сколько градусов в вине? Все зависит от технологии производства и сорта используемого
+            винограда, содержания сахара в ягодах и даже условий брожения вина.
+        </div>
+    </div>
+</div>
+
+
+@@include("blocks/catalog-tags.html")
+
+
+@@include("blocks/filters.html")
+
+
+@@include("blocks/catalog-snipped.html")
+
+
+@@include("blocks/footer.html", {
+"js": "<script src='/local/templates/wineexpress/js/catalog.js'></script>"
+})

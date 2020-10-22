@@ -1,0 +1,105 @@
+@@include("blocks/header.html", {
+"style": "<link rel='stylesheet' href='/local/templates/wineexpress/styles/company.min.css'>"
+})
+
+<nav class="breadcrumb-wrap container" aria-label="breadcrumb">
+    <ol class="breadcrumb" itemprop="http://schema.org/breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="/" class="breadcrumb-link" itemscope="" itemtype="http://schema.org/Thing" itemprop="item name">Главная</a>
+            <meta itemprop="position" content="1">
+        </li>
+        <li class="breadcrumb-item breadcrumb-item__active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" aria-current="page">
+            <span itemprop="name">О компании</span>
+            <meta itemprop="position" content="2">
+        </li>
+    </ol>
+</nav>
+
+<div class="page-head">
+    <div class="container">
+        <h1 class="page-title">О компании Wine Express</h1>
+    </div>
+</div>
+
+<div class="page-wrapper">
+    <article class="container section-block section-content">
+        <p>Wine Express входит в холдинг крупнейшего винного импортера Alianta Group, который имеет заслуженную репутацию эксперта и стабильного
+            партнера, подтвержденную 25 годами опыта работы на алкогольном рынке России.</p>
+        <p>Проект WineExpress объединяет интернет–витрину, винотеки, а также отдел по работе с частными и корпоративными клиентами, который
+            предоставляет индивидуальный сервис и позволяет выбрать удобный вид общения всем клиентам компании AliantaGroup. </p>
+        <p>Для поклонников интернет–сервиса создан удобный онлайн–каталог. Искушенные ценители вина получают стандартный широкий набор
+            параметров поиска. Для первопроходцев мы расширили возможности интерактивной витрины, чтобы помочь подобрать вино по таким
+            параметрам как: гастрономические сочетания, праздники и особые случаи, да и просто по настроению. Мы позаботились и о тех, кто следит
+            за последними тенденциями и сезонными новинками, специально для которых наши профессиональные сомелье регулярно создают
+            интересные и актуальные подборки. </p>
+        <p>Для поклонников личного общения и индивидуального сервиса открыта винотека WineExpressbyAliantaGroup. Также наши менеджеры
+            по работе с частными клиентами могут помочь выбрать вино, учитывая индивидуальные вкусовые предпочтения, повод и возможности
+            бюджета, а менеджеры по работе с корпоративными клиентами — организовать проведение мастер–классов, дегустаций или
+            эногастрономических ужинов.</p>
+
+        <div class="h3">Контакты</div>
+
+        <p>Менеджеры компании всегда готовы ответить на любые ваши вопросы!</p>
+        <p>
+            <span class="text-bold">Телефон:</span>
+            <a href="tel:+7 495 651 9080" rel="nofollow">+7 495 651 9080 </a>
+        </p>
+        <p>
+            <span class="text-bold">Электронная почте:</span>
+            <a href="mailto:order@wineexpress.ru" rel="nofollow">order@wineexpress.ru</a>
+        </p>
+
+        <h4>Наши реквизиты</h4>
+        <p>
+            ООО "Вино он-лайн АГ"<br>
+            ИНН: 5024064362<br>
+            КПП: 772901001<br>
+            ОГРН: 1045004455363
+        </p>
+
+        <div class="h1 text-center">Наши преимущества</div>
+
+        <ul class="advantages-list row">
+            <li class="advantage-list__item sprite-icon-01 col-lg-2 col-sm-4 col-6">
+                25 лет на рынке
+                России
+            </li>
+            <li class="advantage-list__item sprite-icon-02 col-lg-2 col-sm-4 col-6">
+                100% гарантия
+                качества продукции
+            </li>
+            <li class="advantage-list__item sprite-icon-03 col-lg-2 col-sm-4 col-6">
+                Контроль качества
+                товара
+            </li>
+            <li class="advantage-list__item sprite-icon-04 col-lg-2 col-sm-4 col-6">
+                Лучший выбор для
+                любого бюджета
+            </li>
+            <li class="advantage-list__item sprite-icon-05 col-lg-2 col-sm-4 col-6">
+                Персональный
+                подход к каждому
+                клиенту
+            </li>
+            <li class="advantage-list__item sprite-icon-06 col-lg-2 col-sm-4 col-6">
+                Более 900 позиций
+                вина в нашем
+                портфеле
+            </li>
+        </ul>
+
+        <div class="page-panel__bottom row">
+            <div class="col-lg-4 col-md-6 col-sm-9">
+              qwerty
+            </div>
+            <div class="col-md-6 offset-lg-2">
+                <div class="media-wrap hide-to-sm">
+                    <img src="<?= SITE_TEMPLATE_PATH ?>/img/contact-img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+@@include("blocks/footer.html", {
+"js": ""
+})

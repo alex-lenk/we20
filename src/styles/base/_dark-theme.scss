@@ -1,0 +1,113 @@
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $black;
+    color: $white;
+  }
+
+  @media (min-width: 576px) {
+    .snippet-product {
+      background-color: $white;
+    }
+    .card-info {
+      color: $black;
+    }
+    .accordion-card {
+      background-color: $white;
+      color: $black;
+    }
+  }
+  @media (min-width: 992px) {
+    .subscription-inner {
+      color: $black;
+      background-color: $white
+    }
+  }
+  @media (min-width: 1100px) {
+    .top-panel,
+    .top-panel-info__active,
+    .header-address:hover .header-address__label,
+    .menu-nav,
+    .menu-item__parent:hover .menu-link,
+    .dropdown-panel {
+      box-shadow: none;
+    }
+    .top-panel-info__icon,
+    .top-panel-phone__icon,
+    .header-address__icon,
+    .header-basket__icon {
+      fill: $white;
+    }
+    .top-panel-info__active {
+      background-color: $white;
+      color: $black;
+
+      .top-panel-info__icon {
+        fill: $black
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+    .top-panel-info__tip {
+      color: $black;
+      background: $white;
+      box-shadow: none;
+    }
+
+    .top-panel-phone__link,
+    .header-address__label {
+      color: inherit;
+    }
+    .header-address:hover .header-address__label,
+    .menu-link {
+      background-color: $white;
+      color: $black;
+
+      &::after {
+        display: none;
+      }
+    }
+    .menu-nav {
+      background-color: $white;
+      border-bottom: 1px solid $black;
+
+      &::before {
+        display: none;
+      }
+    }
+    .menu-item__parent:hover .menu-link,
+    .dropdown-panel,
+    .snippet-card {
+      background-color: $white;
+    }
+    .dropdown-panel {
+      color: $black;
+    }
+  }
+  .header-logo {
+    background: url(../img/logo-white.svg);
+  }
+  .logo-img {
+    opacity: 0;
+  }
+  .section-title {
+    color: $white;
+  }
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+  .section-content a {
+    color: inherit;
+  }
+  .footer {
+    background-color: $gray-900
+  }
+}

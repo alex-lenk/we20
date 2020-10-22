@@ -1,0 +1,108 @@
+.subscription-inner {
+  box-shadow: $custom-box-shadow;
+  border-radius: 12px;
+}
+
+.subscription-form .custom-control-label {
+  font-size: 13px
+}
+
+
+.footer-subscription__error ~ .form-control {
+  box-shadow: 0 0 5px $red;
+}
+
+.form-required {
+  padding-right: 15px;
+  position: relative;
+
+  &::after {
+    color: $red;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    content: '*';
+  }
+}
+
+.subscribe-form-item {
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .subscription-form .footer-subscription__error {
+    width: 100%;
+    left: 104%;
+    top: 7px;
+  }
+  .subscription {
+    margin-bottom: 100px;
+  }
+  .subscription-inner {
+    padding: 47px 51px;
+  }
+  .subscription-form {
+    max-width: 306px;
+
+    .btn {
+      min-width: 200px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .subscription-inner {
+    height: 367px;
+    background: url(../img/media/sub.svg) no-repeat bottom right;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .subscription-text {
+    max-width: 513px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .subscription-title {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .subscription-inner {
+    height: 339px;
+    background: url(../img/media/vine-sub-01.svg) no-repeat bottom right,
+    url(../img/media/vine-sub-02.svg) no-repeat bottom left,
+    url(../img/media/vine-sub-03.svg) no-repeat top right;
+  }
+  .subscription-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .subscription-text {
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 575px) {
+  .subscription {
+    margin-bottom: 50px;
+  }
+  .subscription-inner {
+    padding: 18px 16px 37px;
+  }
+  .subscription-form {
+    .footer-subscription__error {
+      top: -20px;
+    }
+
+    .btn {
+      min-width: 120px;
+    }
+  }
+}

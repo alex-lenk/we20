@@ -1,0 +1,38 @@
+@media (min-width: 1100px) {
+  .bx-ie {
+    .snippet-card-option__item .icon-sugar {
+      stroke: #d1c08c;
+    }
+
+    .scroll-to-top__icon {
+      background: url(../img/icon/arrow.svg) no-repeat center;
+
+      use {
+        display: none;
+      }
+    }
+
+    .social-footer__item:nth-child(2) .social-footer__icon {
+      background: url(../img/ico/fb.svg) no-repeat center;
+
+      use {
+        display: none;
+      }
+    }
+  }
+
+  .bx-ie10 {
+    .header-vinotheques,
+    .top-panel-info__tip,
+    .dropdown-panel {
+      display: none;
+    }
+
+    .header-address__active + .header-vinotheques,
+    .header-address:hover .header-vinotheques,
+    .top-panel-info__active + .top-panel-info__tip,
+    .menu-item__parent:hover .dropdown-panel {
+      display: block;
+    }
+  }
+}

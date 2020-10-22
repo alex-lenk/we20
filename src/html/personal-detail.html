@@ -1,0 +1,469 @@
+@@include("blocks/header.html", {
+"style": ""
+})
+
+<nav class="breadcrumb-wrap container" aria-label="breadcrumb">
+    <ol class="breadcrumb" itemprop="http://schema.org/breadcrumb" itemscope=""
+        itemtype="http://schema.org/BreadcrumbList">
+        <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="/" class="breadcrumb-link" itemscope="" itemtype="http://schema.org/Thing" itemprop="item name">Главная</a>
+            <meta itemprop="position" content="1">
+        </li>
+        <li class="breadcrumb-item breadcrumb-item__active" itemprop="itemListElement" itemscope=""
+            itemtype="http://schema.org/ListItem" aria-current="page">
+            <span itemprop="name">Мой кабинет</span>
+            <meta itemprop="position" content="2">
+        </li>
+    </ol>
+</nav>
+
+<div class="page-head">
+    <div class="container">
+        <h1 class="page-title">Мой заказ №1291, создан 28.02.2020</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <aside class="personal-aside col-lg-3">
+            <h3 class="personal-aside__title">Мой кабинет</h3>
+
+            <ul class="personal-menu list-unstyled">
+                <li class="personal-menu__item"><a href="#" class="personal-menu__link link-decor">Заказы</a></li>
+                <li class="personal-menu__item"><a href="#" class="personal-menu__link link-decor">Личные данные</a>
+                </li>
+                <li class="personal-menu__item"><a href="#" class="personal-menu__link link-decor">Контакты</a></li>
+            </ul>
+
+            <form onsubmit="return (ValidMail())" class="personal-subscription" method="POST" name="subscribtion_form"
+                  action="https://cp.unisender.com/ru/subscribe?hash=6uxoohz8ct9f35h8a8ifgus6g5c41h17fiumw1dszsaumqjss43zy">
+                <h2 class="personal-subscription__title">Вступай в закрытый винный клуб!</h2>
+
+                <div class="personal-subscription__input">
+                    <svg class="personal-subscription__icon">
+                        <use xlink:href="/local/templates/wineexpress/img/icons.svg#email"></use>
+                    </svg>
+                    <input type="text" name="email" id="footer-subscription__field" placeholder="e-mail"
+                           class="personal-subscription__field form-control hide-placeholder">
+                </div>
+
+                <button class="btn-primary btn personal-subscription__btn" type="submit">Вступить в клуб</button>
+
+                <input type="hidden" name="charset" value="UTF-8">
+                <input type="hidden" name="default_list_id" value="19300713">
+                <input type="hidden" name="overwrite" value="2">
+                <input type="hidden" name="is_v5" value="1">
+
+                <div class="personal-subscription__small">
+                    Нажимая на кнопку, вы принимаете <a href="/privacy/" target="_blank">правила</a> сайта и
+                    соглашаетесь на получение рассылки.
+                </div>
+            </form>
+        </aside>
+
+        <div class="col-lg-9">
+            <a href="/personal/index.php?SECTION=orders">← Вернуться в список заказов</a>
+
+            <br>
+            <br>
+
+            <div class="personal-profile">
+                <div class="personal-profile__title">Информация о заказе</div>
+
+                <fieldset class="personal-detail__info">
+                    <div class="row">
+                        <div class="col-3 personal-detail__info-label">Ф.И.О.</div>
+                        <div class="col-3 personal-detail__info-label">Телефон</div>
+                        <div class="col-3 personal-detail__info-label">E-mail</div>
+                        <div class="col-3 personal-detail__info-label">Статус заказа</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">Янковой Александр Васильевич</div>
+                        <div class="col-3">+7 (977) 345 98 21</div>
+                        <div class="col-3">Test2020@mail.ru</div>
+                        <div class="col-3">В обработке</div>
+                    </div>
+                </fieldset>
+
+
+                <h3 class="personal-profile__title">Товары в заказе</h3>
+
+
+                <div class="row sale-order-detail">
+                    <div class="col">
+                        <div class="row mb-3 mx-0">
+                            <div class="col sale-order-detail-card">
+
+                                <h2 class="sale-order-detail-card-title">Заказ №1291 от 28.02.2020, 2 товара на сумму 628 ₽ </h2>
+
+                                <div class="row mb-3">
+                                    <div class="col p-0">
+                                        <h3 class="personal-profile__title">Информация о заказе</h3>
+                                        <div class="row m-0">
+                                            <div class="col-sm mb-3">
+                                                <div class="sale-order-detail-prop-name">
+                                                    :
+                                                </div>
+                                                <div class="sale-order-detail-prop-value">
+
+                                                </div>
+                                                <div class="pt-3">
+                                                    <a href="" onclick="return false;"
+                                                       class="sale-order-detail-more-info-less">свернуть</a>
+                                                    <a href="" onclick="return false;"
+                                                       class="sale-order-detail-more-info-more">подробнее</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-auto mb-3">
+                                                <div class="sale-order-detail-prop-name">
+                                                    Текущий статус, от 28.02.2020:
+                                                </div>
+                                                <div class="sale-order-detail-prop-value">
+                                                    Выполнен
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm mb-3">
+                                                <div class="sale-order-detail-prop-name">Сумма:</div>
+                                                <div class="sale-order-detail-prop-value">628 ₽</div>
+                                            </div>
+
+                                            <div class="col-sm-auto mb-3 text-center">
+                                                <a href="/personal/index.php?COPY_ORDER=Y&amp;ID=1291&amp;SECTION=orders"
+                                                   class="btn btn-primary btn-block btn-sm my-1">Повторить заказ</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-0 sale-order-detail-more-info-details" style="display: none;">
+                                            <div class="col">
+                                                <h4 class="sale-order-detail-more-info-details-title">Информация о
+                                                    пользователе</h4>
+
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped mb-3 sale-order-detail-more-info-details-table">
+                                                        <tbody>
+                                                        <tr>
+                                                            <th>Логин:</th>
+                                                            <td>+7(968)740-96-46</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>E-mail адрес:</th>
+                                                            <td>
+                                                                <a class="" href="mailto:iankovoi.a@wineexpress.ru">iankovoi.a@wineexpress.ru</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Тип плательщика:</th>
+                                                            <td>Физ. лицо</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Имя:</th>
+                                                            <td>Янковой Александр Васильевич</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Телефон:</th>
+                                                            <td>79687409646</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Email:</th>
+                                                            <td>iankovoi.a@wineexpress.ru</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row mb-3">
+                                    <div class="col p-0">
+                                        <h3 class="sale-order-detail-section-title">Параметры оплаты</h3>
+
+                                        <div class="row pb-3 m-0 align-items-center">
+                                            <div class="col-lg-1 col-md-2 col-xs-2 d-none d-sm-block sale-order-detail-section-payment-image"></div>
+                                            <div class="col">
+                                                <div class="sale-order-detail-payment-options-info-order-number">
+                                                    Заказ №1291 от 28.02.2020, Выполнен
+                                                </div>
+                                                <div class="sale-order-detail-payment-options-info-total-price">
+                                                    Сумма заказа:
+                                                    <span>628 ₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-0">
+                                            <div class="col sale-order-detail-payment-options-methods-container">
+                                                <div class="row payment-options-methods-row">
+                                                    <div class="col sale-order-detail-payment-options-methods">
+                                                        <div class="row m-0 align-items-center sale-order-detail-payment-options-methods-information-block">
+                                                            <div class="col-auto d-none d-sm-block sale-order-detail-payment-options-methods-image-container">
+                                                                <span class="sale-order-detail-payment-options-methods-image-element"
+                                                                      style="background-image: url('/upload/sale/paysystem/logotip/37d/37d9d0e503e113a2bcf0d954381f36b9.png');"></span>
+                                                            </div>
+                                                            <div class="col sale-order-detail-payment-options-methods-info">
+                                                                <div class="mb-2 sale-order-detail-payment-options-methods-info-title">
+                                                                    <div class="sale-order-detail-methods-title">
+                                                                        Счет №1291/1 от 28.02.2020, <span
+                                                                            class="sale-order-list-payment-title-element">Наличный расчет</span>
+                                                                        <span class="sale-order-detail-payment-options-methods-info-title-status-alert">
+																		Не оплачено																	</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mb-2 sale-order-detail-payment-options-methods-info-total-price">
+                                                                    <span class="sale-order-detail-sum-name">Сумма к оплате по счету:</span>
+                                                                    <span class="sale-order-detail-sum-number">628 ₽</span>
+                                                                </div>
+                                                                <a href="#" id="1291/1"
+                                                                   class="sale-order-detail-payment-options-methods-info-change-link">Сменить
+                                                                    способ оплаты</a>
+                                                            </div>
+                                                            <div class="sale-order-detail-payment-inner-row-template col-12">
+                                                                <a href="" onclick="return false"
+                                                                   class="sale-order-list-cancel-payment">
+                                                                    <i class="fa fa-long-arrow-left"></i> назад </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col p-0">
+                                        <h3 class="sale-order-detail-section-title">Параметры отгрузки</h3>
+
+                                        <div class="row mb-3">
+                                            <div class="col sale-order-detail-payment-options-shipment">
+                                                <div class="row">
+
+                                                    <div class="col-2 sale-order-detail-payment-options-shipment-image-container">
+                                                        <span class="sale-order-detail-payment-options-shipment-image-element"
+                                                              style="background-image: url('/bitrix/images/sale/logo-default-d.gif')"></span>
+                                                    </div>
+
+                                                    <div class="col sale-order-detail-payment-options-methods-shipment-list">
+                                                        <div class="mb-2 sale-order-detail-payment-options-methods-shipment-list-item-title">
+                                                            Отгрузка №1291/2, стоимость доставки 0 ₽
+                                                        </div>
+
+                                                        <div class="mb-2 sale-order-detail-payment-options-methods-shipment-list-item">
+                                                            Служба доставки: Служба доставки
+                                                        </div>
+
+                                                        <div class="mb-2 sale-order-detail-payment-options-methods-shipment-list-item">
+                                                            Статус отгрузки:
+                                                            Ожидает обработки
+                                                        </div>
+
+
+                                                        <div class="mt-3 mb-2 sale-order-detail-payment-options-methods-shipment-list-item-link">
+                                                            <a href="" onclick="return false"
+                                                               class="sale-order-detail-show-link">показать все</a>
+                                                            <a href="" onclick="return false"
+                                                               class="sale-order-detail-hide-link">свернуть</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row sale-order-detail-payment-options-shipment-composition-map"
+                                                     style="display: none;">
+                                                    <div class="col">
+
+                                                        <div class="row mx-0 mb-3">
+                                                            <div class="col">
+                                                                <h3 class="sale-order-detail-more-info-details-title">
+                                                                    Состав отгрузки</h3>
+                                                                <div class="table-responsive">
+                                                                    <table class="table">
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td class="sale-order-detail-order-item-img-block">
+                                                                                <a href="/vina/erevan-areni-karmrayut-782-v-s-0-75l/">
+                                                                                    <span class="sale-order-detail-order-item-img-container"
+                                                                                          style="background-image: url(/upload/resize_cache/iblock/0eb/110_110_1/0eb6bfa8700a4f4314329f36c3b915b9.jpg);"></span>
+                                                                                </a>
+                                                                            </td>
+                                                                            <td class="sale-order-detail-order-item-properties"
+                                                                                style="min-width: 250px;">
+                                                                                <a class="sale-order-detail-order-item-title"
+                                                                                   href="/vina/erevan-areni-karmrayut-782-v-s-0-75l/">
+                                                                                    Ереван Арени Кармрают 782 ВС
+                                                                                    0,75л </a>
+                                                                                <div>
+                                                                                    Тип цены:
+                                                                                    BASE
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="sale-order-detail-order-item-properties">
+                                                                                Количество:
+                                                                                1.0000&nbsp;бут
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="sale-order-detail-order-item-img-block">
+                                                                                <a href="/vina/erevan-areni-karmrayut-782-vs-0-75l/">
+                                                                                    <span class="sale-order-detail-order-item-img-container"
+                                                                                          style="background-image: url(/upload/resize_cache/iblock/7bd/110_110_1/7bde2b8c6c868c07ab6d5b8925f8ab1d.jpg);"></span>
+                                                                                </a>
+                                                                            </td>
+                                                                            <td class="sale-order-detail-order-item-properties"
+                                                                                style="min-width: 250px;">
+                                                                                <a class="sale-order-detail-order-item-title"
+                                                                                   href="/vina/erevan-areni-karmrayut-782-vs-0-75l/">
+                                                                                    Ереван Арени Кармрают 782 ВС
+                                                                                    0,75л </a>
+                                                                                <div>
+                                                                                    Тип цены:
+                                                                                    BASE
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="sale-order-detail-order-item-properties">
+                                                                                Количество:
+                                                                                1.0000&nbsp;бут
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col p-0">
+                                        <h3 class="sale-order-detail-section-title">Содержимое заказа</h3>
+
+                                        <div class="row mx-0">
+                                            <div class="col">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                        <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col">Наименование</th>
+                                                            <th scope="col">Цена</th>
+                                                            <th scope="col">Скидка</th>
+                                                            <th scope="col">Количество</th>
+                                                            <th class="text-right">Сумма</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="sale-order-detail-order-item-img-block">
+                                                                <a href="/vina/erevan-areni-karmrayut-782-v-s-0-75l/">
+                                                                    <div class="sale-order-detail-order-item-img-container"
+                                                                         style="background-image: url(/upload/resize_cache/iblock/0eb/110_110_1/0eb6bfa8700a4f4314329f36c3b915b9.jpg);"></div>
+                                                                </a>
+                                                            </td>
+                                                            <td class="sale-order-detail-order-item-properties"
+                                                                style="min-width: 250px;">
+                                                                <a class="sale-order-detail-order-item-title"
+                                                                   href="/vina/erevan-areni-karmrayut-782-v-s-0-75l/">Ереван
+                                                                    Арени Кармрают 782 ВС 0,75л</a>
+                                                                <div class="sale-order-detail-order-item-properties-type">
+                                                                    BASE
+                                                                </div>
+                                                            </td>
+                                                            <td class="sale-order-detail-order-item-properties">
+                                                                <span class="bx-price">540 ₽</span>
+                                                            </td>
+                                                            <td class="sale-order-detail-order-item-properties text-right">
+                                                                42%
+                                                            </td>
+                                                            <td class="sale-order-detail-order-item-properties">
+                                                                1&nbsp;
+                                                                бут
+                                                            </td>
+                                                            <td class="sale-order-detail-order-item-properties text-right">
+                                                                <strong class="bx-price">314 ₽</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="sale-order-detail-order-item-img-block">
+                                                                <a href="/vina/erevan-areni-karmrayut-782-vs-0-75l/">
+                                                                    <div class="sale-order-detail-order-item-img-container"
+                                                                         style="background-image: url(/upload/resize_cache/iblock/7bd/110_110_1/7bde2b8c6c868c07ab6d5b8925f8ab1d.jpg);"></div>
+                                                                </a>
+                                                            </td>
+                                                            <td class="sale-order-detail-order-item-properties"
+                                                                style="min-width: 250px;">
+                                                                <a class="sale-order-detail-order-item-title"
+                                                                   href="/vina/erevan-areni-karmrayut-782-vs-0-75l/">Ереван
+                                                                    Арени Кармрают 782 ВС 0,75л</a>
+                                                                <div class="sale-order-detail-order-item-properties-type">
+                                                                    BASE
+                                                                </div>
+                                                            </td>
+                                                            <td class="sale-order-detail-order-item-properties">
+                                                                <span class="bx-price">540 ₽</span>
+                                                            </td>
+                                                            <td class="sale-order-detail-order-item-properties text-right">
+                                                                42%
+                                                            </td>
+                                                            <td class="sale-order-detail-order-item-properties">
+                                                                1&nbsp;
+                                                                бут
+                                                            </td>
+                                                            <td class="sale-order-detail-order-item-properties text-right">
+                                                                <strong class="bx-price">314 ₽</strong>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="row sale-order-detail-total-payment">
+                                    <div class="col sale-order-detail-total-payment-container">
+                                        <div class="row">
+                                            <ul class="col-md-8 col sale-order-detail-total-payment-list-left">
+                                                <li class="sale-order-detail-total-payment-list-left-item">Стоимость
+                                                    доставки:
+                                                </li>
+                                                <li class="sale-order-detail-total-payment-list-left-item">Итого:</li>
+                                            </ul>
+                                            <ul class="col-md-4 col sale-order-detail-total-payment-list-right">
+                                                <li class="sale-order-detail-total-payment-list-right-item">0 ₽</li>
+                                                <li class="sale-order-detail-total-payment-list-right-item">628 ₽</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--sale-order-detail-general-->
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <a href="/personal/index.php?SECTION=orders">← Вернуться в список заказов</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include("blocks/footer.html", {
+"js": ""
+})

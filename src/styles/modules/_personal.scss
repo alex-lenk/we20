@@ -1,0 +1,463 @@
+.personal-aside {
+  margin-bottom: 30px;
+}
+
+.personal-aside__title {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #bbb;
+  font-size: 24px;
+  line-height: 29px;
+  color: $black;
+}
+
+.personal-menu__link {
+  color: $black;
+}
+
+.personal-section__link {
+  color: $black;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(#000, .25);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-section__icon {
+  color: $black;
+}
+
+.personal-special-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.personal-special-list .snippet-card__item {
+  margin-bottom: 30px;
+}
+
+.personal-profile {
+  margin-bottom: 30px;
+}
+
+.personal-profile__title {
+  line-height: 32px;
+  color: $black;
+  font-weight: 500;
+}
+
+.personal-profile__column {
+  margin-right: 11%;
+}
+
+.personal-auth {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.personal-auth__box {
+  max-width: 470px;
+  width: 100%;
+}
+
+.personal-profile__label {
+  font-weight: 500;
+  line-height: 17px;
+  color: $black;
+}
+
+.personal-profile__text {
+  font-size: 13px;
+  line-height: 16px;
+  color: #bbb;
+}
+
+.personal-profile__control {
+  padding-top: 22px;
+  display: flex;
+}
+
+.personal-profile__submit {
+  min-width: 140px;
+  margin-right: 15px;
+}
+
+.personal-profile__cancel {
+  height: auto;
+  padding: 5px 15px;
+  color: $black;
+}
+
+.personal-subscription {
+}
+
+.personal-subscription__title {
+  font-weight: 500;
+  color: $black;
+}
+
+.personal-subscription__input {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.personal-subscription__icon {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  fill: #bbb;
+}
+
+.personal-subscription__field {
+  height: 30px;
+  padding-left: 35px;
+}
+
+.personal-subscription__small {
+  font-size: 12px;
+  line-height: 16px;
+
+}
+
+.personal-order__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 24px;
+  color: inherit;
+}
+
+.personal-order__item__number {
+  font-size: 18px;
+  color: #3274D7;
+}
+
+.bx-authform__form {
+  width: 100%;
+  max-width: 480px;
+}
+
+.personal-status__successful {
+  color: #5D9700;
+}
+
+.personal-status__cancel {
+  color: #9B0030;
+}
+
+.personal-status__processing {
+  color: $black;
+}
+
+.personal-detail__info {
+  margin-bottom: 50px;
+}
+
+.personal-detail__info-label {
+  font-weight: 500;
+  color: $black;
+}
+
+.personal-detail__item {
+  align-items: center;
+}
+
+.personal-detail__item-title {
+  font-weight: 500;
+}
+
+.personal-detail__item-title__link {
+  color: $black;
+}
+
+.personal-detail__item-discount {
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+
+.personal-detail__comment {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+
+.personal-detail__comment-title {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: $black;
+}
+
+.personal-detail__total {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.personal-detail__total-label {
+  margin-right: 50px;
+}
+
+.personal-back {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  color: $black;
+}
+
+.personal-back__icon {
+  width: 14px;
+  height: 14px;
+  margin-left: 8px;
+  fill: $black;
+}
+
+.personal-profile__date {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .personal-profile {
+    padding: 25px 30px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+  }
+  .personal-profile__row {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .personal-profile__column {
+    max-width: 35%;
+    flex-basis: 35%;
+  }
+  .personal-profile__label {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .personal-profile__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .personal-menu {
+    margin-bottom: 50px;
+  }
+  .personal-menu__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .personal-subscription__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .personal-subscription__btn {
+    margin-bottom: 30px;
+  }
+  .personal-section__link {
+    height: 270px;
+    font-size: 20px;
+    line-height: 32px;
+    transition: border .3s, box-shadow .3s, color .3s;
+
+    &:hover {
+      border-color: rgba(#000, .25);
+      box-shadow: none;
+      text-decoration: none;
+      color: inherit;
+
+      .personal-section__icon {
+        fill: $gray-900;
+      }
+    }
+  }
+  .personal-section__icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 15px;
+    transition: fill .3s;
+  }
+  .personal-section {
+    margin-bottom: 50px;
+  }
+  .personal-order__head {
+    color: $black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .personal-order__list {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #bbb;
+  }
+  .personal-order__item {
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: #eee;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  .personal-detail__info-item--center {
+    text-align: center;
+  }
+  .personal-detail__info-label {
+    margin-bottom: 5px;
+  }
+  .personal-detail__item-img {
+    padding-right: 25px;
+  }
+  .personal-detail__item-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .personal-detail__item-price {
+    text-align: right;
+  }
+  .personal-detail__item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .personal-aside {
+    max-width: 85%;
+    padding-top: 20px;
+    order: 1;
+  }
+  .personal-menu {
+    margin-bottom: 30px;
+  }
+  .personal-menu__item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .personal-menu__link {
+    font-size: 14px;
+    line-height: 1;
+  }
+  .personal-profile__row {
+    margin-bottom: 30px;
+  }
+  .personal-profile__label {
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+  .personal-profile__title {
+    margin-bottom: 10px;
+  }
+  .personal-subscription__title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .personal-subscription__btn {
+    margin-bottom: 10px;
+  }
+  .personal-section__link {
+    min-height: 90px;
+    font-size: 13px
+  }
+  .personal-section__icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+  }
+  .personal-section {
+    margin-bottom: 10px;
+  }
+  .personal-order__head {
+    display: none;
+  }
+  .personal-order__item {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  .personal-order__item__number,
+  .personal-order__item__cost {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    order: 1;
+  }
+  .personal-order__item__status {
+    order: 2;
+  }
+  .personal-order__item__data,
+  .personal-order__item__status {
+    font-size: 13px;
+    line-height: 1;
+  }
+  .personal-detail__info {
+    display: flex;
+  }
+  .personal-detail__info-item {
+    font-size: 13px;
+    max-width: 50%;
+    flex-basis: 50%;
+    flex-direction: column;
+  }
+  .personal-detail__info-label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+  }
+  .personal-detail__item-title {
+    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 18px;
+    flex: 0 0 91%;
+    max-width: 91%;
+  }
+  .personal-detail__item-discount {
+    display: none
+  }
+  .personal-detail__item-price {
+    display: flex;
+    padding-left: 10%;
+    margin-top: -18px;
+    font-size: 13px;
+    line-height: 1;
+
+    .bx-price {
+      margin-right: 10px;
+    }
+  }
+  .personal-detail__item-count {
+    margin-top: -30px;
+    font-size: 13px;
+    text-align: right;
+    margin-left: auto;
+    line-height: 1;
+    order: 1;
+  }
+  .personal-detail__item {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}

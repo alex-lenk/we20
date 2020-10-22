@@ -1,0 +1,35 @@
+@import "base/settings";
+@import "base/mixins";
+
+@import "base/general";
+@import "base/forms";
+@import "base/button";
+@import "base/custom-control";
+@import "base/slider-arrow";
+/* General */
+@import "modules/previously-viewed";
+@import "modules/top-panel";
+@import "modules/header";
+@import "modules/menu";
+@import "modules/snippet-card";
+@import "modules/snippet-product";
+@import "modules/component-sticker";
+@import "modules/scroll-to-top";
+@import "modules/nav-scroll";
+@import "modules/nav-bar";
+@import "modules/breadcrumb";
+@import "modules/call-form";
+@import "modules/footer";
+/* For other pages */
+@import "modules/card-info";
+@import "modules/pagination";
+@import "modules/page";
+@import "modules/catalog";
+@import "modules/news";
+@import "modules/actions";
+@import "modules/social";
+@import "modules/modal-year";
+@import "modules/quick-search";
+@import "modules/page-set";
+@import "modules/personal";
+@import "base/ie";

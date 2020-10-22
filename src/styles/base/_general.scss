@@ -1,0 +1,233 @@
+h1, .h1, h2, .h2, h3, .h3,
+h4, .h4, h5, .h5, h6, .h6 {
+  color: $black;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h1, .h1 {
+  font-size: 20px;
+}
+
+h2, .h2 {
+  font-size: 19px;
+}
+
+h3, .h3 {
+  font-size: 18px;
+}
+
+h4, .h4 {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.lazy {
+  opacity: 0;
+}
+
+a:focus {
+  outline: none;
+}
+
+.section-block {
+  margin-bottom: 50px;
+}
+
+.section-content {
+  .h1, .h2, h1, h2 {
+    padding-top: 10px;
+  }
+
+  .h3, .h4, .h5, .h6,
+  h3, h4, h5, h6 {
+    padding-top: .7rem;
+  }
+
+  a {
+    color: $black;
+    text-decoration: underline;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.section-title {
+  font-weight: 500;
+  text-align: center;
+  color: $black;
+  position: relative;
+}
+
+.text-bold {
+  font-weight: 500;
+  color: $black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.list-line {
+  padding-left: 0;
+  list-style: none;
+
+  li::before {
+    content: '– ';
+  }
+}
+
+.media-wrap {
+  overflow: hidden;
+  display: block;
+  box-shadow: 0 0 7px rgba(0, 0, 0, .25);
+}
+
+.link-decor {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  transition: color .3s;
+
+  &::after {
+    width: 0;
+    height: 1px;
+    margin: 0;
+    border-bottom: 1px solid;
+    opacity: 0;
+    display: block;
+    transition: width .3s, opacity .3s;
+    content: '';
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+button.btn-install-app {
+  position: fixed;
+  bottom: 10px;
+  left: 14px;
+  display: none;
+  z-index: 1000;
+}
+
+@media (min-width: 576px) {
+  h1, .h1, h2, .h2, h3, .h3,
+  h4, .h4, h5, .h5, h6, .h6 {
+    margin-bottom: .8rem;
+    line-height: 1.4;
+  }
+  h1, .h1 {
+    font-size: 36px;
+  }
+
+  h2, .h2 {
+    font-size: 25px;
+  }
+
+  h3, .h3 {
+    font-size: 22px;
+  }
+
+  h4, .h4 {
+    font-size: 20px;
+  }
+
+  .section-block {
+    margin-bottom: 90px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+
+  .section-content {
+    .h3, .h4, .h5, .h6,
+    h3, h4, h5, h6 {
+      padding-top: 1rem;
+    }
+  }
+  .media-wrap {
+    border-radius: 12px;
+  }
+}
+
+@media (min-width: 576px) {
+  .show-to-sm {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1099px) {
+  body {
+    padding-top: 60px;
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: fixed;
+      z-index: 8;
+      background-color: rgba(#000, .4);
+      transition: opacity .3s ease-out;
+      content: '';
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hide-to-sm {
+    display: none !important;;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .media-wrap {
+    border-radius: 7px;
+  }
+}
+
+@media (max-width: 374px) {
+  .section-title {
+    font-size: 18px;
+  }
+}

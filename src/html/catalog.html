@@ -1,0 +1,26 @@
+@@include("blocks/header.html", {
+"style": "<link rel='stylesheet' href='/local/templates/wineexpress/styles/catalog.min.css'>"
+})
+
+
+@@include("blocks/breadcrumb.html")
+
+
+<div class="page-head">
+    <div class="container">
+        <h1 class="page-title">Каталог</h1>
+    </div>
+</div>
+
+@@include("blocks/catalog-tags.html")
+
+
+@@include("blocks/filters.html")
+
+
+@@include("blocks/catalog-snipped.html")
+
+
+@@include("blocks/footer.html", {
+"js": "<script src='/local/templates/wineexpress/js/catalog.js'></script>"
+})
