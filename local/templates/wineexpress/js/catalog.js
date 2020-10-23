@@ -8,8 +8,7 @@ function documentMouseup(elClass, twoClass) {
 
 $(document).ready(function () {
 
-        $(".scroll__box").niceScroll(".scroll__box_in", {cursoropacitymin: 1, cursorcolor: "#990000"});
-
+    if ($(window).width() < 1100) $(".scroll__box").niceScroll(".scroll__box_in", {cursoropacitymin: 1, cursorcolor: "#990000"});
 
     /* BEGIN Нажатие плюс минус на товаре */
 
@@ -35,7 +34,7 @@ $(document).ready(function () {
             snippetCardBottom.addClass('col-3');
         });
 
-        ym(52227139,'reachGoal','horizontalCatalog'); // счетчик переключений в горизонтальную развертку Я.Метрика
+        ym(52227139, 'reachGoal', 'horizontalCatalog'); // счетчик переключений в горизонтальную развертку Я.Метрика
     });
 
     $('.catalog-btn__grid').click(function () {

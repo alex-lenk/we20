@@ -392,7 +392,8 @@
   }
 
   .filter_item_type-head {
-    height: 70px;
+    height: 68px;
+    margin-bottom: 2px;
     padding-left: 100px;
     background-color: $gray-400;
   }
@@ -413,8 +414,37 @@
 
   .scroll__box {
     width: 100%;
-    height: 200px;
+    max-height: 200px;
+    height: 100%;
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+      background-color: #fff;
+    }
+
+    //— это фон самого скроллбара.
+
+    &::-webkit-scrollbar-button {
+      background-color: #ccc;
+      border-radius: 7px;
+    }
+
+    //— кнопки направления на полосе прокрутки.
+
+    &::-webkit-scrollbar-track {
+      background-color: #eee
+    }
+
+    //— пустое пространство под индикатором прокрутки.
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #990000;
+      border-radius: 7px;
+    }
+
+    //— индикатор прокрутки, перетаскиваемый элемент.
+
   }
 
   .spoiler-filter__icon {
