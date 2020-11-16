@@ -1,4 +1,4 @@
-/* 
+/*
     onClickVolag - AJAX-добавление товара в корзину
     GetCartCount - AJAX-запрос на получение количества строчек товаров в корзине
     ReloadCartCount - обновляет данные о количестве строк в корзине
@@ -8,7 +8,6 @@
 */
 
 function onClickVolag(el) {
-
     addcartpopup(); /* всплывающее окошко */
 
     let itemId = el.dataset.id;
@@ -26,6 +25,8 @@ function onClickVolag(el) {
             ReloadCartCount();
         }
     });
+
+    window.oDataLayer = window.oDataLayer || []; window.oDataLayer.KEY = "conv";
 
     return false;
 }
