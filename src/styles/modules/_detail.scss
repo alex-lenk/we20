@@ -1,4 +1,5 @@
 .detail-wrapper {
+  padding-top: 20px;
   overflow-x: hidden;
 }
 
@@ -15,7 +16,6 @@
 
 .detail-property {
   color: $black;
-  font-size: 13px;
   position: relative;
 }
 
@@ -194,6 +194,11 @@
 }
 
 /**/
+
+.detail-gallery__for {
+  margin-bottom: 32px;
+}
+
 .detail-gallery {
   padding-left: 0;
   margin: 20px -8px 0;
@@ -209,10 +214,10 @@
   margin-right: 8px;
   transition: border-color .3s;
 
-  &:first-child {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+  /*  &:first-child {
+      width: 100%;
+      margin-bottom: 20px;
+    }*/
 
   &:not(:first-child) {
     width: 80px;
@@ -233,6 +238,9 @@
 
 .detail-gallery__item-inner {
   width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
   display: block;
   border: 1px solid #eee;
   transition: border-color .4s;
@@ -242,8 +250,17 @@
   }
 }
 
+.detail-gallery__nav-wrap {
+  .slick-prev {
+    left: -35px;
+  }
+
+  .slick-next {
+    right: -35px;
+  }
+}
+
 .detail-properties {
-  font-size: 18px;
   line-height: 1.2;
   display: flex;
   flex-wrap: wrap;
@@ -278,7 +295,40 @@
   text-decoration: underline;
 }
 
+.detail-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.detail-list {
+  margin-bottom: 40px
+}
+
+.detail-list__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.detail-price {
+  margin-bottom: 13px;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.detail-price-new {
+  font-weight: 600;
+  color: $black;
+}
+
 @media (min-width: 576px) {
+  .detail-properties {
+    font-size: 18px;
+  }
+  .detail-gallery__nav-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .detail-gallery {
     .slick-arrow {
       width: 18px;
@@ -327,6 +377,7 @@
   }
 
   .detail-wrapper {
+    padding-top: 35px;
     margin-bottom: 30px;
   }
 
@@ -353,15 +404,15 @@
       left: -13%;
     }
   }
-  .detail-property {
-    font-size: 18px;
-  }
   .detail-inner .component-sticker-wrap {
     display: none;
   }
   .detail-media__object {
     height: 483px;
     padding-top: 18px;
+  }
+  .detail-gallery__wrap {
+    height: 570px;
   }
   .detail-rating {
     padding-top: 17px;
@@ -501,9 +552,12 @@
   .detail-tab-body a:hover {
     text-decoration: none;
   }
+  .detail-inner {
+    margin-bottom: 50px;
+  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .detail-panel {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -544,13 +598,17 @@
   }
 }
 
-
 @media (max-width: 575px) {
+  .detail-gallery__nav-wrap {
+    margin-bottom: 30px;
+  }
+
   .detail-wrapper {
     margin-bottom: 16px;
   }
 
   .detail-property {
+    font-size: 13px;
     order: 1;
   }
 

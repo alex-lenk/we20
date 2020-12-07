@@ -171,6 +171,10 @@
       content: 'Розовое';
     }
   }
+
+  .snippet-card-option__blue .tooltip-custom::before {
+      content: 'Голубое';
+  }
 }
 
 .preUpLoader {

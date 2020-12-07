@@ -3,7 +3,6 @@
 }
 
 .page-head {
-  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   background: $gray-400;
@@ -36,9 +35,6 @@
 }
 
 @media (min-width: 576px) {
-  .page-head {
-    margin-bottom: 35px;
-  }
   .page-title__kyr {
     padding-top: 7px;
     font-size: 22px;

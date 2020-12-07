@@ -328,7 +328,8 @@
   .snippet-card-option__2096,
   .snippet-card-option__pink,
   .snippet-card-option__2098,
-  .snippet-card-option__roze {
+  .snippet-card-option__roze,
+  .snippet-card-option__blue {
     display: flex;
 
     &::before {
@@ -361,6 +362,10 @@
     &::before {
       background-color: #F9A1AA;
     }
+  }
+
+  .snippet-card-option__blue::before {
+    background-color: #00d5e1;
   }
 
   .snippet-card-option__100141,

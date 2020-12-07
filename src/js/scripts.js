@@ -40,6 +40,61 @@ function ValidMail() {
 
 
 $(document).ready(function () {
+    $('.detail-gallery__for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.detail-gallery__nav'
+    });
+    $('.detail-gallery__nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.detail-gallery__for',
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
+
+    $('.fast-filter__item').click(function () {
+        $('.catalog-tags__link').removeClass('catalog-tags__link-active');
+        $(this).find('.catalog-tags__link').addClass('catalog-tags__link-active');
+    });
+
+    $('#__red').click(function () {
+        $('.production').removeClass().addClass('production is-red');
+    });
+    $('#__white').click(function () {
+        $('.production').removeClass().addClass('production is-white');
+    });
+    $('#__pink').click(function () {
+        $('.production').removeClass().addClass('production is-pink');
+    });
+    $('#__sparkling').click(function () {
+        $('.production').removeClass().addClass('production is-sparkling');
+    });
+    $('#__alcohol').click(function () {
+        $('.production').removeClass().addClass('production is-alcohol');
+    });
+    /*
+    $('#__champagne').click(function () {
+        $('.production').removeClass().addClass('production is-champagne');
+    });
+        $('#__cognac').click(function () {
+            $('.production').removeClass().addClass('production is-cognac');
+        });
+        $('#__wine').click(function () {
+            $('.production').removeClass().addClass('production is-wine');
+        });
+        */
+
+
     $('.slick-init').slick();
 
     /* BEGIN: 1 */

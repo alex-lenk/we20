@@ -1,14 +1,6 @@
-.top-panel,
-.header,
-.menu-nav,
 #bx-soa-delivery,
 #bx-soa-paysystem {
   display: none !important;
-}
-
-.nav-scroll {
-  opacity: 0;
-  transform: translateY(-100%);
 }
 
 .basket-panel {
@@ -56,12 +48,6 @@
   .basket-panel__back {
     display: flex;
     align-items: center;
-  }
-}
-
-@media (max-width: 1099px) {
-  body {
-    padding-top: 0 !important;
   }
 }
 

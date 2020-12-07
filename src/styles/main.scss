@@ -56,6 +56,56 @@
 @import "modules/wine-bestsellers";
 /* END: home page */
 
+.fast-filter {
+  padding-top: 15px;
+
+  .catalog-tags__link {
+    cursor: pointer;
+  }
+}
+
+.is- {
+  &red .catalog-item:not(.__red) {
+    display: none;
+  }
+
+  &red,
+  &white,
+  &pink {
+    .catalog-item.__sparkling,
+    .catalog-item.__champagne {
+      display: none;
+    }
+  }
+
+  &white .catalog-item:not(.__white) {
+    display: none;
+  }
+
+  &pink .catalog-item:not(.__pink) {
+    display: none;
+  }
+
+  &sparkling .catalog-item:not(.__sparkling) {
+    display: none;
+  }
+
+  &alcohol .catalog-item:not(.__alcohol) {
+    display: none;
+  }
+
+  /*
+  &champagne .catalog-item:not(.__champagne) {
+    display: none;
+  }  &cognac .catalog-item:not(.__cognac) {
+      display: none;
+    }
+    &wine .catalog-item:not(.__wine) {
+      display: none;
+    }
+    */
+}
+
 /* Begin: Catalog page */
 @import "modules/tag-styles";
 @import "modules/filter-select";
