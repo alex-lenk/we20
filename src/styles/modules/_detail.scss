@@ -1,5 +1,4 @@
 .detail-wrapper {
-  padding-top: 20px;
   overflow-x: hidden;
 }
 
@@ -214,11 +213,6 @@
   margin-right: 8px;
   transition: border-color .3s;
 
-  /*  &:first-child {
-      width: 100%;
-      margin-bottom: 20px;
-    }*/
-
   &:not(:first-child) {
     width: 80px;
     height: 80px;
@@ -377,8 +371,12 @@
   }
 
   .detail-wrapper {
-    padding-top: 35px;
+    //padding-top: 35px;
     margin-bottom: 30px;
+  }
+
+  .detail-furniture {
+    padding-top: 35px;
   }
 
   .detail-glass-property {
@@ -599,6 +597,10 @@
 }
 
 @media (max-width: 575px) {
+  .detail-furniture {
+    padding-top: 20px;
+  }
+
   .detail-gallery__nav-wrap {
     margin-bottom: 30px;
   }

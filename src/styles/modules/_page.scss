@@ -35,6 +35,9 @@
 }
 
 @media (min-width: 576px) {
+  .page-head {
+    margin-bottom: 35px;
+  }
   .page-title__kyr {
     padding-top: 7px;
     font-size: 22px;
@@ -58,5 +61,11 @@
       background: #fbfbfb;
       content: '';
     }
+  }
+}
+
+@media (max-width: 575px) {
+  .page-head {
+    margin-bottom: 20px;
   }
 }
