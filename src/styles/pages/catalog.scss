@@ -1,153 +1,7 @@
-@import "base/settings";
-@import "base/mixins";
-
-@import "base/general";
-@import "base/forms";
-@import "base/button";
-@import "base/custom-control";
-@import "base/slider-arrow";
-/* General */
-@import "modules/previously-viewed";
-@import "modules/top-panel";
-@import "modules/header";
-@import "modules/menu";
-@import "modules/snippet-card";
-@import "modules/snippet-product";
-@import "modules/component-sticker";
-@import "modules/scroll-to-top";
-@import "modules/nav-scroll";
-@import "modules/nav-bar";
-@import "modules/breadcrumb";
-@import "modules/call-form";
-@import "modules/footer";
-@import "modules/winery-slider";
-@import "modules/popular-tags";
-/* For other pages */
-@import "modules/card-info";
-@import "modules/pagination";
-@import "modules/page";
-@import "modules/catalog";
-@import "modules/news";
-@import "modules/actions";
-@import "modules/social";
-@import "modules/modal-year";
-@import "modules/quick-search";
-@import "modules/page-set";
-@import "modules/personal";
-@import "modules/detail";
-@import "modules/brands";
-@import "modules/404";
-@import "modules/our-team";
-@import "modules/winery";
-@import "modules/basket";
-@import "modules/basket-empty";
-@import "modules/basket-make";
-@import "modules/events";
-@import "modules/not-found";
-
-/* Begin: home page */
-@import "modules/main-slider";
-@import "modules/inst-carousel";
-@import "modules/bestsellers-full";
-@import "modules/accordion-card";
-@import "modules/prompt";
-@import "modules/subscription";
-@import "modules/see-all";
-@import "modules/wine-bestsellers";
-/* END: home page */
-
-.basket-edit__btn {
-  margin-bottom: 30px;
-  height: 70px;
-  background-color: #5F1129;
-  color: #fff;
-  font-weight: 500;
-  font-size: 18px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity .2s ease-in-out;
-
-  &:hover {
-    opacity: .95;
-    color: #fff;
-    text-decoration: none;
-  }
-}
-
-.basket-input {
-  height: 25px;
-  max-width: 100px;
-  margin-right: 7px;
-  text-align: center;
-  display: inline-flex;
-}
-
-.basket-input__percent {
-  height: 25px;
-  max-width: 50px;
-  margin-right: 7px;
-  margin-left: 10px;
-  text-align: center;
-  display: inline-flex;
-}
-
-.fast-filter {
-  padding-top: 15px;
-
-  .catalog-tags__link {
-    cursor: pointer;
-  }
-}
-
-.is- {
-  &red .catalog-item:not(.__red) {
-    display: none;
-  }
-
-  &red,
-  &white,
-  &pink {
-    .catalog-item.__sparkling,
-    .catalog-item.__champagne {
-      display: none;
-    }
-  }
-
-  &white .catalog-item:not(.__white) {
-    display: none;
-  }
-
-  &pink .catalog-item:not(.__pink) {
-    display: none;
-  }
-
-  &sparkling .catalog-item:not(.__sparkling) {
-    display: none;
-  }
-
-  &alcohol .catalog-item:not(.__alcohol) {
-    display: none;
-  }
-
-  /*
-  &champagne .catalog-item:not(.__champagne) {
-    display: none;
-  }  &cognac .catalog-item:not(.__cognac) {
-      display: none;
-    }
-    &wine .catalog-item:not(.__wine) {
-      display: none;
-    }
-    */
-}
-
-/* Begin: Catalog page */
-@import "modules/tag-styles";
-@import "modules/filter-select";
-
-@import "base/ie";
+@import "../base/settings";
+@import "../base/mixins";
+@import "../modules/tag-styles";
+@import "../modules/filter-select";
 
 .sp_drop-160 .label::after {
   content: 'º';
@@ -538,14 +392,13 @@
   }
 
   .filter_item_type-head {
-    height: 68px;
-    margin-bottom: 2px;
+    height: 70px;
     padding-left: 100px;
     background-color: $gray-400;
   }
 
   .filter_item_type_box {
-    padding: 20px 70px;
+    padding: 30px 100px 14px 100px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, .25);
     display: flex;
@@ -553,44 +406,15 @@
   }
 
   .filter_item_country {
-    padding: 35px 1px;
+    padding: 30px 1px 14px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .scroll__box {
     width: 100%;
-    max-height: 220px;
-    height: 100%;
+    height: 200px;
     overflow-y: auto;
-
-    &::-webkit-scrollbar {
-      width: 7px;
-      background-color: #fff;
-    }
-
-    //— это фон самого скроллбара.
-
-    &::-webkit-scrollbar-button {
-      background-color: #eee;
-      border-radius: 7px;
-    }
-
-    //— кнопки направления на полосе прокрутки.
-
-    &::-webkit-scrollbar-track {
-      background-color: #fbfbfb
-    }
-
-    //— пустое пространство под индикатором прокрутки.
-
-    &::-webkit-scrollbar-thumb {
-      background-color: #990000;
-      border-radius: 7px;
-    }
-
-    //— индикатор прокрутки, перетаскиваемый элемент.
-
   }
 
   .spoiler-filter__icon {
@@ -917,6 +741,11 @@
     overflow: hidden;
     height: 100%;
     max-height: calc(100% - 183px);
+    //max-height: calc(100vh - 183px);
+    //display: flex;
+    //flex-direction: column;
+    //background-color: aquamarine;
+    //border: 2px solid green;
     flex: 1 1 auto;
   }
   .scroll__box {
@@ -981,62 +810,3 @@
     }
   }
 }
-
-/* END: Catalog page */
-
-/* Begin: Company page */
-@mixin stitches-sprite($x: 0, $y: 0) {
-  background-position: $x $y;
-}
-
-[class*="sprite-"]::before {
-  width: 60px;
-  height: 60px;
-  background-image: url(../img/sprites-advantages.png);
-  background-repeat: no-repeat;
-  background-size: 180px 120px;
-  display: block;
-  content: '';
-}
-
-.sprite-icon-01::before {
-  @include stitches-sprite(0, 0);
-}
-
-.sprite-icon-02::before {
-  @include stitches-sprite(-60px, 0);
-}
-
-.sprite-icon-03::before {
-  @include stitches-sprite(0, -60px);
-}
-
-.sprite-icon-04::before {
-  @include stitches-sprite(-60px, -60px);
-}
-
-.sprite-icon-05::before {
-  @include stitches-sprite(-120px, 0);
-}
-
-.sprite-icon-06::before {
-  @include stitches-sprite(-120px, -60px);
-}
-
-.advantages-list {
-  padding-top: 15px;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.advantage-list__item {
-  line-height: 1.3;
-
-  &::before {
-    margin: 0 auto 11px;
-  }
-}
-
-/* END: Company page */

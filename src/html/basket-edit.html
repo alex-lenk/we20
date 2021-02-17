@@ -1,0 +1,329 @@
+@@include("blocks/header.html")
+
+<style>
+    .top-panel,
+    .header,
+    .menu-nav,
+    .breadcrumb-wrap {
+        display: none !important;
+    }
+    .nav-scroll {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    @media (max-width: 1099px) {
+        body {
+            padding-top: 0 !important;
+        }
+    }
+</style>
+
+<div class="basket-panel container">
+    <div class="row">
+        <a href="basket.html" class="basket-panel__back col-md-5 col-6">
+            <svg class="basket-panel__back-icon">
+                <use xlink:href="/local/templates/wineexpress/img/icons.svg#arrow-short"></use>
+            </svg>
+            <span>Вернуться в корзину</span>
+        </a>
+        <a href="/" class="basket-panel__logo col-lg-2 col-md-4 col-6">
+            <img loading="lazy" src="/local/templates/wineexpress/img/logo.svg" class="basket-panel__logo-img" alt="Магазин Wine Express">
+        </a>
+    </div>
+</div>
+
+<div id="basket-root" class="bx-basket bx-blue bx-step-opacity">
+<div class="page-head">
+    <div class="container">
+        <h1 class="page-title">Редактирование цены</h1>
+    </div>
+</div>
+
+
+<!-- BEGIN: список товаров в корзине -->
+<div class="container">
+    <div class="basket-items-head">
+        <div class="row">
+            <div class="col-md-1 col-sm-1">Фото</div>
+            <div class="col-md-4 col-sm-3">Наименование</div>
+            <div class="col-md-2 col-sm-2">Базовая цена</div>
+            <div class="col-md-2 col-sm-2">Цена со скидкой</div>
+            <div class="col-md-2 col-sm-2 basket-items-head__percent">% скидки</div>
+            <div class="col-md-1 col-sm-1 basket-items-head__remove">Убрать</div>
+        </div>
+    </div>
+
+    <section class="basket-items-list-table">
+        <div class="row basket-items-list-item-container">
+            <div class="basket-item-block-image col-lg-1 col-md-1 col-2 ">
+                <a href="#" class="basket-item-image-link" target="_blank">
+                    <img loading="lazy" src="https://wineexpress.ru/upload/resize_cache/iblock/9c5/160_160_1/9c5b13b40930a4cb56cf9bc64bdbbece.jpg" class="basket-item-image" alt="Виски ирландский односолодовый 11-летний Кинаханс Блэк Оак релиз № 8 0,7л">
+                </a>
+            </div>
+            <div class="basket-items-list-item-descriptions col-lg-4 col-md-3 col-8">
+                <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-56311">
+                    <div class="basket-item-block-info">
+                        <span class="basket-item-actions-remove visible-xs" data-entity="basket-item-delete"></span>
+                        <div class="presence btn-tollp">
+                            <div class="presence_value">
+                                22653
+                            </div>
+                        </div>
+                        <div class="basket__item_name">
+                            <a href="#" target="_blank">Whisky Kinahan’s Black Oak Cask Release № 8 0,7 gift pack</a>
+                            <div class="basket__item_name-dop">
+                                Виски ирландский односолодовый 11-летний Кинаханс Блэк Оак релиз № 8 0,7л
+                            </div>
+                        </div>
+                        <div class="basket__item_char">
+                            <ul class="product__item_char snippet-card-option">
+                                <li class="snippet-card-option__item tooltip-toggle snippet-card-option__country">
+                                    <svg class="icon-country">
+                                        <use xlink:href="/local/templates/wineexpress/img/countries.svg#ireland"></use>
+                                    </svg>
+                                    <div class="tooltip-custom tooltip-custom-top" role="tooltip">Ирландия</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="product__item_char_mob">
+                            <li class="product__item_char_mob-point">Ирландия</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-4 basket-items-list-item-price basket-items-list-item-price-for-one">
+                <div class="basket-item-block-price">
+                    <div class="basket-item-price-current">
+                        <span class="basket-item-price-current-text price-base-1">100 ₽</span>
+                    </div>
+                    <div class="basket-item-price-title">
+                        цена за 1 шт
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-4 basket-items-list-item-price">
+                <div class="basket-item-block-price">
+                    <div class="basket-item-price-current">
+                        <span class="basket-item-price-current-text">
+                            <input type="text" class="basket-input form-control hide-placeholder" placeholder="___"> ₽
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-4 basket-items-list-item-price">
+                <div class="basket-item-block-price">
+                    <div class="basket-item-price-current">
+                        <span class="basket-item-price-current-text">
+                            <input type="text" class="basket-input__percent form-control hide-placeholder" placeholder="__"> %
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1 col-md-1 col-2 basket-items-list-item-remove">
+                <div class="basket-item-block-actions">
+                    <span class="basket-item-actions-remove close" data-entity="basket-item-delete"><span aria-hidden="true">x</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row basket-items-list-item-container">
+            <div class="basket-item-block-image col-lg-1 col-md-1 col-2 ">
+                <a href="#" class="basket-item-image-link" target="_blank">
+                    <img loading="lazy" src="https://wineexpress.ru/upload/resize_cache/iblock/992/160_160_1/992d3dd52f3a6ccc7b1568f00be987dc.jpg" class="basket-item-image" alt="Маркиз де ла Конкордия Резерва Риоха DOC 0,75л">
+                </a>
+            </div>
+            <div class="basket-items-list-item-descriptions col-lg-4 col-md-3 col-8">
+                <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-56312">
+                    <div class="basket-item-block-info">
+                        <span class="basket-item-actions-remove visible-xs" data-entity="basket-item-delete"></span>
+                        <div class="presence btn-tollp">
+                            <div class="presence_status">
+                                <div class="presence_status-icon presence-green"></div>
+                                Есть в наличии
+                            </div>
+                            <div class="presence_value">
+                                22034
+                            </div>
+                        </div>
+                        <div class="basket__item_name">
+                            <a href="/catalog/wine/markiz-de-la-konkordiya-rezerva-riokha-doc-0-75l/">Marques de la Concordia Reserva Rioja DOC 0,75l</a>
+                            <div class="basket__item_name-dop">
+                                Маркиз де ла Конкордия Резерва Риоха DOC 0,75л
+                            </div>
+                        </div>
+                        <div class="basket__item_char">
+                            <ul class="product__item_char snippet-card-option">
+                                <li class="snippet-card-option__item tooltip-toggle snippet-card-option__country">
+                                    <svg class="icon-country">
+                                        <use xlink:href="/local/templates/wineexpress/img/countries.svg#spain"></use>
+                                    </svg>
+                                    <div class="tooltip-custom tooltip-custom-top" role="tooltip">Испания</div>
+                                </li>
+                                <li class="snippet-card-option__item tooltip-toggle snippet-card-option__2102">
+                                    <svg class="icon-sugar">
+                                        <use xlink:href="/local/templates/wineexpress/img/sugar.svg#2102"></use>
+                                    </svg>
+                                    <div class="tooltip-custom tooltip-custom-top">Сухое</div>
+                                </li>
+                                <li class="snippet-card-option__item tooltip-toggle snippet-card-option__2096">
+                                    <div class="tooltip-custom tooltip-custom-top">Красное</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="product__item_char_mob">
+                            <li class="product__item_char_mob-point">Испания</li>
+                            <li class="product__item_char_mob-point">Красное</li>
+                            <li class="product__item_char_mob-point">Сухое</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-4 basket-items-list-item-price basket-items-list-item-price-for-one">
+                <div class="basket-item-block-price">
+                    <div class="basket-item-price-current">
+                        <span class="basket-item-price-current-text price-base">
+                            1 570 ₽
+                        </span>
+                    </div>
+
+                    <div class="basket-item-price-title">
+                        цена за 1 шт
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-4 basket-items-list-item-price">
+                <div class="basket-item-block-price">
+                    <div class="basket-item-price-current">
+                        <span class="basket-item-price-current-text">
+                            <input type="text" class="basket-input form-control hide-placeholder" placeholder="___"> ₽
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-4 basket-items-list-item-price">
+                <div class="basket-item-block-price">
+                    <div class="basket-item-price-current">
+                        <span class="basket-item-price-current-text">
+                            <input type="text" class="basket-input__percent form-control hide-placeholder" placeholder="__"> %
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1 col-md-1 col-2 basket-items-list-item-remove">
+                <div class="basket-item-block-actions">
+                    <span class="basket-item-actions-remove close" data-entity="basket-item-delete"><span aria-hidden="true">x</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row basket-items-list-item-container">
+            <div class="basket-item-block-image col-lg-1 col-md-1 col-2 ">
+                <a href="#" class="basket-item-image-link" target="_blank">
+                    <img loading="lazy" src="https://wineexpress.ru/upload/resize_cache/iblock/603/160_160_1/6036d5635f576c5a60e5177aaefaf0f3.jpg" class="basket-item-image" alt="Вино Бутира Сира DOC, Сицилия 0,75 л">
+                </a>
+            </div>
+            <div class="basket-items-list-item-descriptions col-lg-4 col-md-3 col-8">
+                <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-56313">
+                    <div class="basket-item-block-info">
+                        <span class="basket-item-actions-remove visible-xs" data-entity="basket-item-delete"></span>
+                        <div class="presence btn-tollp">
+                            <div class="presence_status">
+                                <div class="presence_status-icon presence-green"></div>
+                                Есть в наличии
+                            </div>
+                            <div class="presence_value">
+                                20937
+                            </div>
+                        </div>
+                        <div class="basket__item_name">
+                            <a href="#" target="_blank">Butirah Syrah DOC, Sicilia 0,75</a>
+                            <div class="basket__item_name-dop">
+                                Вино Бутира Сира DOC, Сицилия 0,75 л
+                            </div>
+                        </div>
+                        <div class="basket__item_char">
+                            <ul class="product__item_char snippet-card-option">
+                                <li class="snippet-card-option__item tooltip-toggle snippet-card-option__country">
+                                    <svg class="icon-country">
+                                        <use xlink:href="/local/templates/wineexpress/img/countries.svg#italy"></use>
+                                    </svg>
+                                    <div class="tooltip-custom tooltip-custom-top" role="tooltip">Италия</div>
+                                </li>
+                                <li class="snippet-card-option__item tooltip-toggle snippet-card-option__2102">
+                                    <svg class="icon-sugar">
+                                        <use xlink:href="/local/templates/wineexpress/img/sugar.svg#2102"></use>
+                                    </svg>
+                                    <div class="tooltip-custom tooltip-custom-top">Сухое</div>
+                                </li>
+                                <li class="snippet-card-option__item tooltip-toggle snippet-card-option__2096">
+                                    <div class="tooltip-custom tooltip-custom-top">Красное</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="product__item_char_mob">
+                            <li class="product__item_char_mob-point">Италия</li>
+                            <li class="product__item_char_mob-point">Красное</li>
+                            <li class="product__item_char_mob-point">Сухое</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-4 basket-items-list-item-price basket-items-list-item-price-for-one">
+                <div class="basket-item-block-price">
+
+                    <div class="basket-item-price-current">
+
+                        <span class="basket-item-price-current-text price-base">
+                            2 369 ₽
+                        </span>
+                    </div>
+
+                    <div class="basket-item-price-title">
+                        цена за 1 бут
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-4 basket-items-list-item-price">
+                <div class="basket-item-block-price">
+                    <div class="basket-item-price-current">
+                        <span class="basket-item-price-current-text">
+                            <input type="text" class="basket-input form-control hide-placeholder" placeholder="___"> ₽
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-4 basket-items-list-item-price">
+                <div class="basket-item-block-price">
+                    <div class="basket-item-price-current">
+                        <span class="basket-item-price-current-text">
+                            <input type="text" class="basket-input__percent form-control hide-placeholder" placeholder="__"> %
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1 col-md-1 col-2 basket-items-list-item-remove">
+                <div class="basket-item-block-actions">
+                    <span class="basket-item-actions-remove close" data-entity="basket-item-delete"><span aria-hidden="true">x</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- END: список товаров в корзине -->
+
+</div>
+
+@@include("blocks/footer.html", {
+"js": ""
+})
