@@ -1,7 +1,7 @@
 {
   "name": "wineexpress",
   "version": "2.0.0",
-  "description": "For work wineexpress.ru",
+  "description": "For work we20",
   "main": "gulpfile.js",
   "directories": {
     "test": "test"
@@ -11,10 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.intravision.ru/sinigamiruyk/wineexpress.git"
+    "url": "https://github.com/alex-lenk/we20"
   },
   "keywords": [
-    "wineexpress",
     "we"
   ],
   "author": "alex lenk",
