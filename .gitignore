@@ -1,0 +1,66 @@
+/.git/*
+/.htaccess
+/*.htaccess
+/.htaccess*
+/web.config
+/*web.config
+/*.log
+/*.sql
+# исключаем из репозитория текстовые файлы, но оставляем robots.txt
+/*.txt
+/sitemap*.xml
+/*.dt
+/*.tar.gz
+/*.gz
+/*.tar
+/*.bak
+/*.old
+/*.csv
+/*~
+*/_*
+/_*
+/composer.*
+# исключаем ВСЮ папку bitrix, но ниже настроим включение нужных папок
+# или используйте папку /local, чтобы полностью исключить папку bitrix
+/alfa-landing/*
+/bitrix/*
+/wenewexchange/*
+/landing/*
+/lanit-landing/*
+/sap-landing/*
+/local/templates/wine-landing-genered/*
+# включаем папку components, но исключаем components/bitrix
+!/bitrix/components
+/bitrix/components/bitrix/
+# включаем папку php_interface и исключаем файл dbconn.php
+!/bitrix/php_interface/
+/bitrix/php_interface/dbconn.php
+/bitrix/php_interface/after_connect_d7.php
+/bitrix/php_interface/*.bak
+# включаем папку шаблонов
+!/bitrix/templates/
+/bitrix/templates/landing24/*
+# исключаем служебные и ненужные папки проекта
+/upload/*
+/page/*
+/catalog.old/*
+/desktop_app/*
+.DS_Store
+/yandex_*
+/TWuuzHgwKG
+*.iml
+.idea
+node_modules
+dist
+build
+bower_components
+/push/text.txt
+/sbp/paydata/paydata.log
+/ajax/sms/phonecode.txt
+/ajax/sms/phonecodecorrect.txt
+.top_catalog.menu.php
+.bottom1.menu.php
+.bottom2.menu.php
+.bottom3.menu.php
+.top.menu.php
+.top_for.menu.php
