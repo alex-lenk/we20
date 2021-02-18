@@ -185,7 +185,7 @@
             <div class="col-lg-2 col-md-2 col-4 basket-items-list-item-price basket-items-list-item-price-for-one">
                 <div class="basket-item-block-price">
                     <div class="basket-item-price-current">
-                        <span class="basket-item-price-current-text price-base">
+                        <span class="basket-item-price-current-text price-base-1">
                             1 570 ₽
                         </span>
                     </div>
@@ -281,7 +281,7 @@
 
                     <div class="basket-item-price-current">
 
-                        <span class="basket-item-price-current-text price-base">
+                        <span class="basket-item-price-current-text price-base-1">
                             2 369 ₽
                         </span>
                     </div>
@@ -319,11 +319,36 @@
             </div>
         </div>
     </section>
+
+    <div class="basket-offer-end">
+        Дата окончания предложения
+
+        <div class="d-flex">
+            <input type="text" class="basket-date form-control hide-placeholder" placeholder="__">
+            <input type="text" class="basket-date form-control hide-placeholder" placeholder="__">
+            <input type="text" class="basket-date__year form-control hide-placeholder" placeholder="____">
+        </div>
+
+        Оставьте поле пустым, если хотите создать предложение безссрочно
+    </div>
+
+    <div class="basket-control">
+        <button type="button" class="btn-primary btn js__get-link">
+            Создать предложение
+        </button>
+
+        <div class="basket-control__copy">
+            <input type="text" class="basket-control__copy--input form-control" id="myInput" placeholder="Здесь появится ссылка для клиента" readonly>
+            <button class="basket-control__copy--btn btn btn-secondary ">Копировать</button>
+        </div>
+
+        <a href="basket.html" class="btn btn-light">Вернуться в корзину</a>
+    </div>
 </div>
 <!-- END: список товаров в корзине -->
 
 </div>
 
 @@include("blocks/footer.html", {
-"js": ""
+"js": "<script src='/local/templates/wineexpress/js/basket-edit.js'></script>"
 })

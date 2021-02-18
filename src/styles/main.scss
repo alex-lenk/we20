@@ -76,21 +76,70 @@
   }
 }
 
-.basket-input {
+.basket-input,
+.basket-input__percent,
+.basket-date,
+.basket-date__year {
   height: 25px;
-  max-width: 100px;
-  margin-right: 7px;
   text-align: center;
   display: inline-flex;
 }
 
+.basket-input {
+  max-width: 100px;
+  margin-right: 7px;
+}
+
 .basket-input__percent {
-  height: 25px;
   max-width: 50px;
   margin-right: 7px;
   margin-left: 10px;
-  text-align: center;
-  display: inline-flex;
+}
+
+.basket-date {
+  max-width: 60px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.basket-date__year {
+  max-width: 70px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.basket-offer-end {
+  padding-top: 26px;
+  padding-bottom: 22px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.basket-control {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.basket-control__copy {
+  padding-left: 30px;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.basket-control__copy--input {
+  width: 508px;
+  height: 38px;
+}
+
+.basket-control__copy--btn {
+  margin-left: -15px;
+  flex-shrink: 0;
+  min-width: 122px;
+  height: 40px;
 }
 
 .fast-filter {

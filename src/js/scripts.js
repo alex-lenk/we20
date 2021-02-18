@@ -40,29 +40,6 @@ function ValidMail() {
 
 
 $(document).ready(function () {
-    let priceBase = parseInt($('.price-base-1').text().replace(/[^0-9]/gi, '')); // получаем базовую цену
-    let basketInput = $('.basket-input'); // поле с ценой со скидкой
-    let basketInputPercent = $('.basket-input__percent'); // поле процентов
-
-    $(basketInputPercent).on('keyup change', function() {
-        let thisPercent = $(this).val();
-        let resultPrice = priceBase / 100 * thisPercent; //вычисление процентов
-        basketInput.val(priceBase - resultPrice);
-    });
-
-    $(basketInput).on('keyup change', function() {
-        let thisPrice = $(this).val();
-        let resultPrice = Math.round(100 - thisPrice * 100 / priceBase); //вычисление процентов
-        basketInputPercent.val(resultPrice);
-    });
-
-    //let resultPrice = priceBase / 100 * basketInputPercent; //вычисление процентов
-
-    //console.log(resultPrice);
-    //
-
-
-
     $('.detail-gallery__for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
